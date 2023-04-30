@@ -1,0 +1,45 @@
+function [voce_criptata] = RC4_voice_function_crypt(voce_in,cypher)
+S=zeros(1,256);
+for i=1:256
+    S(i)=i-1;
+end
+
+kbin=cypher;
+kbin2=kbin(1:1:floor(length(kbin)/8)*8);
+kbin3=reshape(kbin2,8,[]);
+kbin3=kbin3';
+key=bin2dec(kbin3)';
+j=0;
+for i=0:255
+   j=mod(j+S(i+1)+key(mod(i,length(key))+1),256);
+   aux=S(i+1);
+   S(i+1)=S(j+1);
+   S(j+1)=aux;
+end
+
+i=0;
+j=0;
+sentence=voce_in;
+sentence=sentence+1;
+sentence=sentence*1000;
+binary_sentence=dec2bin(sentence);
+binary_sentence=reshape(binary_sentence', 1, 11*length(binary_sentence));
+lprim=length(binary_sentence);
+lungime=floor(length(binary_sentence)/8)+1;
+binary_sentence(length(binary_sentence):1:8*lungime)='0';
+for k=1:lungime
+  i=mod(i,256)+1;
+  j=mod(j+S(i)-1,256)+1;
+  aux=S(i);
+  S(i)=S(j);
+  S(j)=aux;
+  K=S(mod(S(i)+S(j),256)+1);
+  binary_sentence(1+(k-1)*8:1:k*8)=functia_silviu(binary_sentence(1+(k-1)*8:1:k*8)+dec2bin(K,8));
+end
+binary_sentence=binary_sentence(1:lprim);
+binary_sentence=(reshape(binary_sentence, 11, []))';
+binary_sentence=bin2dec(binary_sentence)';
+binary_sentence=binary_sentence/1000;
+voce_criptata=binary_sentence-1;
+end
+

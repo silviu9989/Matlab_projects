@@ -1,0 +1,90 @@
+1. Sa se proiecteze un formator de fascicul pentru o retea de comunicatii mobile; se vor analiza cel putin 2 formatoare de fascicule adaptive
+Maftei
+
+2. Utilizarea distributiei Taylor pt o retea plana de antene. Distributia Taylor va asigura lobi secundari de -30dB, reateaua are 16 elemente radiante; simulare 2 variante excitatie
+Cirlan
+
+3. Utilizarea distributiei Taylor pt o retea plana de antene. Distributia Taylor va asigura lobi secundari de -25dB, reateaua are 9 elemente radiante; simulare 2 variante excitatie
+Alucai
+
+4. Utilizarea distributiei Taylor pt o retea liniara de antene. Distributia Taylor va asigura lobi secundari de -18dB, reteaua are 15RIPuri, situate la distanta lambda/2; comparatie cu distributia uniforma si Dolph-Cebisev
+Miu
+
+5. Utilizarea distributiei Taylor pt o retea liniara de antene. Distributia Taylor va asigura lobi secundari de -20dB, reteaua are 17RIPuri, situate la distanta lambda/4; comparatie cu distributia uniforma si Dolph-Cebisev
+Bolgar
+
+6. Identificare si proiectare antena pentru aplicatiile Radio Freq Identification - studiem ce inseamna, identificare tipuri antene; alegem o antena, alegem banda si proiectam in mediu de simulare cunoscut;
+Burcea
+
+7. Aplicarea analizei multivariabila la analiza semnalelor - Analiza Componentelor Principale (PCA)-; pt un set de 5 semnale, generate pornind de la 2 oscilatii independente (o oscilatie 
+armonica si una in impuls) + zgomot, se vor calcula componentele principale si valorile proprii asociate
+Saramet
+
+8. Utilizarea distributiei binomiale pt o retea liniara de antene. Distributia va asigura lobi secundari de -25dB, reteaua are 15RIPuri, situate la distanta lambda/2; comparatie cu distributia uniforma si Dolph-Cebisev
+Ispas
+
+9. Utilizarea distributiei binomiale pt o retea liniara de antene. Distributia va asigura lobi secundari de -20dB, reteaua are 17RIPuri, situate la distanta lambda/4; comparatie cu distributia uniforma si Dolph-Cebisev
+Cristea
+
+10. Optimizare retea liniara antene utilizand algoritmi genetici : 15RIPuri, distanta lambda/2, lobi secundari de cel putin -18dB, comparare cu distributia uniforma
+Cioponea
+
+11. Optimizare retea liniara antene utilizand algoritmi genetici : 11RIPuri, distanta lambda/2, lobi secundari de cel putin -20dB, comparare cu distributia Dolph-Cebisev
+Becheru
+
+12. Optimizare retea liniara antene utilizand algoritmi genetici : 9RIPuri, distanta lambda/4, lobi secundari de cel putin -24dB, comparare cu distributia binomiala
+Patrascu
+
+13. Utilizare distributie Dolph-Cebisev pt o retea liniara de antene de 12 RIPuri; lobi secundari -20dB; comparare cu distributia uniforma si inca una (NU binomiala)
+													  caz 1 - distanta : sfert de unda
+Fronescu										   			  caz 2 - distanta : semiunda  (se trateaza ambele cazuri)
+
+14. Utilizare distributie Dolph-Cebisev pt o retea liniara de antene de 22 RIPuri; lobi secundari -25dB; comparare cu distributia binomiala si uniforma
+Neculache												  caz 1 - distanta : sfert de unda
+										   			  caz 2 - distanta : semiunda  (se trateaza ambele cazuri)
+
+15. Sa se reprezinte grafic : (ecuatiile le gasiti si pe google)
+a) Spirala lui Arhimede
+b) 	   logaritmica
+c)	   lui Fermat 
+d)	   lui Galileo
+	Prezentare antena tip Spirala lui Arhimede; MATLAB : Functia de directivitate a antenei si a unei retele de antene tip Spirala lui Arhimede
+Dobri
+
+16. Sa se aplice pt un semnal vocal sau de tip .wav tehnici de scrambling de inversare a spectrului. Realizare interfata grafica Matlab pt a pune in evidenta rezultatele
+-se folosesc butoane si ferestre
+-explicam procedeul de emisie-receptie, captarea semnalului vocal etc;
+Bogdan Miruna
+
+17. Sa se aplice pt un semnal vocal sau de tip .wav tehnici de scrambling ce se bazeaza pe folosirea subbenzilor. Realizare interfata grafica Matlab pt a pune in evidenta rezultatele
+-se folosesc butoane si ferestre
+-explicam procedeul de emisie-receptie, captarea semnalului vocal etc
+-impartim spectrul in subbenzi, folosim o cheie pentru amestecarea subbenzilor
+Tuta
+
+18. Aplicare analiza multivariabila la analiza semnalelor - Analiza Componentelor Independente (ICA); pornind de la 3 componente de tip armonic, cu modulatie liniara de frecventa se vor
+crea 5 semnale, cu ajutorul unei matrici de mixare continand variabile aleatoare si, apoi, se vor determina componentele independente(ideal cele 3 initiale) aplicand metoda ICA.
+Simionescu
+
+19. Studiul conceptului de Smart antennas in sistemul de comunicatii militare modern. Pornind de la literatura de specialitate, sa se faca un studiu al conceptului. Prezentare
+modalitati de implementare, avantaje aduse.
+Abriham
+
+20. Reducere nivel lobi secundari folosind fereastra de ponderare, pentru o retea plana de antene; minim 3 ferestre de ponderare; reprezentare caracteristica de directivitate 3D a retelei
+plane pentru diferite ferestre; calculam nivel lobi secundari pentru fiecare exemplu analizat
+Tutuianu
+
+21. Reducere nivel lobi secundari folosind fereastra de ponderare, pentru o retea circulara de antene; minim 3 ferestre de ponderare; reprezentare caracteristica de directivitate 3D a retelei
+circulare pentru diferite ferestre; calculam nivel lobi secundari pentru fiecare exemplu analizat
+Stefanescu
+
+22. Reducere nivel lobi secundari folosind fereastra de ponderare, pentru o retea liniara de antene; minim 3 ferestre de ponderare; se va face o comparatie dpdv al nivelului lobilor 
+secundari si al unghiului de deschidere la 3dB si se vor scoate in evidenta cele mai bune valori obtinute pentru ferestrele de ponderare analizate
+
+
+23. Utilizarea distributiei Taylor pt o retea circulara de antene. Parametri : lobi secundari -22dB, reteaua contine 32 elemente radiante; valorile obtinute pentru unghiurile de deschidere
+la 3dB vor fi analizate cu cele obtinute pentru o retea de antene cu elemente uniform distribuite (care contine tot 32 de elemente radiante)
+
+
+24. Utilizarea distributiei Dolph-Cebisev pt o retea plana de antene. Reteaua de antene contine 16 elemente (patrat 4x4), cu distanta lambda/2; nivel lobi secundari -24dB;
+rezultatele obtinute pt cazul analizat se compara cu distributia uniforma si cu inca o distributie cunoscuta
